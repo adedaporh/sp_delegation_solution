@@ -22,3 +22,19 @@ If you don't have a paid mockaroo account, you are limited to 1000 items per dow
 You can download as much as you need and combine them into one file.
 
 You can also download the dataset [here](Dataset/TicketingSystem.json)
+
+Create a list named TicketingSystem_Teams with the following schema
+- Title: Single line text
+- Email: Single line text
+- Lead: Person or Group (don't allow multiple selections)
+
+Add the following data to the list
+
+| Title | Email |
+| ------------- | ------------- |
+| Domain Service Team	| ds_team@contoso.com |
+| Network Infrastructure Team | ni_team@contoso.com |
+| Operations Support Team |	ops_support@constoso.com |
+| End User Support Team |	eus@contoso.com |
+
+For the Lead column, add users in your environments.
