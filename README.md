@@ -80,4 +80,4 @@ To import the data into the list, download this [flow](https://github.com/adedap
 
 ## App set up
 
-Please read this guide on how to set up the app
+Please read [this guide](Solution/README.md) on how to set up the app
