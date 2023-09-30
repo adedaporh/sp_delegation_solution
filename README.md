@@ -9,20 +9,6 @@ What is included:
   - ✔️ Give your user the choice to choose how many items to show in the gallery at a time.
  
 ## Dataset
-Use the link below to download the dataset from [mockaroo](https://mockaroo.com/)
-
-Generate data using cURL with the following command:
-```
-curl "https://api.mockaroo.com/api/fc9fbc90?count=1000&key=e2064450" > "TicketingSystem.json"
-```
-Public URL:
-https://www.mockaroo.com/fc9fbc90
-
-If you don't have a paid mockaroo account, you are limited to 1000 items per download.
-You can download as much as you need and combine them into one file.
-
-You can also download the dataset [here](Dataset/TicketingSystem.json)
-
 Create a list named TicketingSystem_Teams with the following schema
 - Title: Single line text
 - Email: Single line text
@@ -38,3 +24,36 @@ Add the following data to the list
 | End User Support Team |	eus@contoso.com |
 
 For the Lead column, add users in your environments.
+
+Create another list named TicketingSystem_ServiceTickets with the following schema
+- Title: Single line text
+- ServiceType: Choice
+  - Incident
+  - Problem
+  - Change
+- ServiceCategory: Choice
+  - Work Devices
+  - Networking
+  - Software
+  - Equipment
+  - Domain and Servers
+- TeamToImplement: Lookup to TicketingSystem_Teams and select Title as the column to look up
+- AssignedTo: Person or Group (don't allow multiple selections)
+- TicketID: Single line of text
+- ServiceDescription: Multiple lines of text
+
+You can download the large dataset [here](Dataset/TicketingSystem.json)
+
+If you want to generate a different set of data with the same schema, use the link below to download the large dataset from [mockaroo](https://mockaroo.com/)
+
+You can generate data using cURL with the following command:
+```
+curl "https://api.mockaroo.com/api/fc9fbc90?count=1000&key=e2064450" > "TicketingSystem.json"
+```
+Or just visit the public URL:
+https://www.mockaroo.com/fc9fbc90
+
+If you don't have a paid mockaroo account, you are limited to 1000 items per download.
+You can download as much as you need and combine them into one file.
+
+To import the data into the list, download this [flow](https://github.com/adedaporh/powerplatform/blob/main/Power%20Automate/LoadDataPlus_20230921094630.zip) and pass the downloaded dataset json file as well as the SP site address and SP list name as inputs to the flow.
