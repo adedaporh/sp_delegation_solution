@@ -1,3 +1,4 @@
+# App set up instructions
 1. Download the solution files [here](SPListSolutionDemo_Latest.zip)
 2. Import the solution in to your environment and select a SP connection for the connection reference.
 3. Edit the Ticket System app
