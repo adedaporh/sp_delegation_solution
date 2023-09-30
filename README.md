@@ -63,12 +63,14 @@ This flow will retrieve the IDs of all the users with access to your site. To us
 **From dataset**
 
 Edit the downloaded dataset and find *"AssignedToId":*. This will highlight all the places this column value is set in the json file. Replace all the values that are not in your set of IDs. For example, you can replace all instance of *"AssignedToId":1,* with *"AssignedToId":13,* etc. Note the inclusion of the comma.
+
 ![image](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/10a7870b-ce7c-4070-b35d-edb83db7d98d)
 
 
 **From mockaroo**
 
 Simply add all the IDs in a comma seperated list in the *AssignedToId* field. Then generate your data.
+
 ![image](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/47fd54c8-6c37-41c7-a8a4-e17178749f9b)
 
 
