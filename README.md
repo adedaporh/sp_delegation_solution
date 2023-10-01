@@ -98,6 +98,7 @@ To work properly work with large data sets in SharePoint, you must index the col
 - Click on the gear icon at the top right, then click on *List settings* from the right panel
 - From the list settings page, scroll down and click on *Indexed columns*
 - Create the indices for the columns listed below
+
 ![List settings](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/5a934d43-ec63-4198-98fb-46177b5298b7)
 ![Indexed columns link](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/afa095ac-4097-4962-8ffb-4c458da2ad0f)
 ![List of indexed columns](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/bc378fe1-f20e-4d7d-b17d-dc831c1485e7)
