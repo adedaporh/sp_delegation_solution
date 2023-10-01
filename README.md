@@ -7,6 +7,18 @@ What is included:
 - ✅ Better pagination support - Yes, the default pagination can be improved upon.
   - ✔️ Choose your page size - You are no longer stuck with the 100-item page size
   - ✔️ Give your user the choice to choose how many items to show in the gallery at a time.
+## Solution Overview
+The solution aims to solve 2 limitations with SharePoint as a Power Apps datasource:
+- Limited delegation support
+- Limited pagination implementation
+
+The key to solving this problem is to use Power Automate's better integration with SharePoint to extend Power Apps' capabilities in these areas.
+The use case I'm using to convey this idea is a Service Ticket management app. It consists of:
+- 2 SharePoint lists
+  - The main list with the service requests/tickets
+  - A related list with the teams that can resolve these tickets
+- An instant flow that can be triggered from Power Apps. This flow is responsible for data query to and retriveral from SharePoint
+- An app to showcase how one might implement this idea and an alternative app that is almost identical except for the pagination implementation.
  
 ## Dataset
 Create a list named TicketingSystem_Teams with the following schema
