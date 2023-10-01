@@ -77,6 +77,8 @@ Simply add all the IDs in a comma seperated list in the *AssignedToId* field. Th
 ### Import data
 
 To import the data into the list, download this [flow](https://github.com/adedaporh/powerplatform/blob/main/Power%20Automate/LoadDataPlus_20230921094630.zip) and pass the downloaded dataset json file as well as the SP site address and SP list name as inputs to the flow.
+>> [!IMPORTANT]
+> Do not add the trailing "/" to the end of the site address. E.g., *https://example.sharepoint.com/sites/SiteName* not *https://example.sharepoint.com/sites/SiteName*
 
 ## App set up
 
