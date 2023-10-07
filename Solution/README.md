@@ -1,10 +1,7 @@
 # App set up instructions
 1. Download the solution files [here](SPListSolutionDemo_Latest.zip)
 2. Import the solution in to your environment and select a SP connection for the connection reference.
-3. Edit the Ticket System app
-4. Add the 2 SP lists to the app ![Add SP lists](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/f4b02e6c-2281-4639-b652-7256ef057fda)
-5. Go to App -> Formulas and update the SiteURL named formula value to your SP site URL. ![Change named formula](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/46bae8cb-fe3b-4650-b681-738d62c631ab)
-6. Click on the *Get data* button to test data loading.
-7. Save and publish.
-8. Repeat steps 3 to 7 for Ticket System Alt app.
-
+3. Click *Next*. Then choose your SP site for the TicketingSystem_SP_Site input ![image](https://github.com/adedaporh/sp_delegation_solution/assets/33579016/82c13e93-28e1-4a97-8309-5bdabd254e61)
+4. Choose the SP lists for their respective inputs. Click *Import* to import the solution.
+5. Go to the imported solution and play any of the apps. Allow connection permissions, if prompted.
+7. Click on the *Get data* button to test data loading.
