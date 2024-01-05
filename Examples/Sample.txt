@@ -1,0 +1,47 @@
+//OnSelect of button control
+With(
+    {
+        top: 100,
+        ListName: "TicketingSystem_ServiceTickets"
+    },
+    With(
+        {query: $"?$top={top}"},
+        UpdateContext(
+            {
+                _res: SearchFlow.Run(
+                    ListName,
+                    query,
+                    false,
+                    false
+                ),
+                _query: query
+            }
+        );
+    )
+);
+
+//Items of gallery control
+DropColumns(
+    AddColumns(
+        Table(ParseJSON(_res.results)),
+        "ID",
+        Value(Value.ID),
+        "Title",
+        Text(Value.Title),
+        "TicketID",
+        Text(Value.TicketID),
+        "ServiceType",
+        Text(Value.ServiceType),
+        "TeamToImplementTitle",
+        Text(Value.TeamToImplement.Title),
+        "TeamToImplementId",
+        Value(Value.TeamToImplement.Id),
+        "AuthorName",
+        Text(Value.Author.Name),
+        "AuthorEMail",
+        Text(Value.Author.EMail),
+        "AuthorTitle",
+        Text(Value.Author.Title)
+    ),
+    "Value"
+)
