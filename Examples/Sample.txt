@@ -13,8 +13,7 @@ With(
                     query,
                     false,
                     false
-                ),
-                _query: query
+                )
             }
         );
     )
