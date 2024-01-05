@@ -5,3 +5,5 @@
 4. Choose the SP lists for their respective inputs. Click *Import* to import the solution.
 5. Go to the imported solution and play any of the apps. Allow connection permissions, if prompted.
 7. Click on the *Get data* button to test data loading.
+
+Once you have gone through the demos, visit the project's [wiki](https://github.com/adedaporh/sp_delegation_solution/wiki) to learn how to build your own queries!
